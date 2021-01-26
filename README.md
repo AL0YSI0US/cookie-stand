@@ -20,6 +20,8 @@ You have found yourself at the heart of **Pat's'** Cookie Stand, **welcome!** . 
 +
 +
 +
+
+![access](https://github.com/AL0YSI0US/about-me/blob/main/img/8grid.png?raw=true) 
 ## Accessibility Data for Website: al0ysi0us.github.io/cookie-stand 
 + January xx, 2021 WCAG 2.1 AA Level Web Accessibility Audit | Verdict : UKN
 + January xx, 2021 WAVE Web Accessibility Evaluation | Verdict : UKN
