@@ -1,4 +1,4 @@
-# LAB - 02
+# LAB - 06
 
 ## Cookie-Stand
 
