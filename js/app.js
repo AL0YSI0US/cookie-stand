@@ -4,7 +4,7 @@
 
 let myContainer = document.getElementById('container');
 
-// console.log(myContainer);
+console.log(myContainer);
 
 // 1. create the ELEMENT
 let section = document.createElement('section');
@@ -34,67 +34,52 @@ let p = document.createElement('p');
 p.textContent = 'You need not be Pacific Native Born to appreciate the cookies Pat has crafted, his masterpiece is a global hit. Pleasing the teastebuds of hipsters from Seattle clear across the globe.';
 article.appendChild(p);
 
+let seattle = document.getElementById('seattle');
+// console.log(seattle);
+
+
+// Venue : Seattle
+// 6am: 16 cookies
+// 7am: 20 cookies
+// 8am: 35 cookies
+// 9am: 48 cookies
+// 10am: 56 cookies
+// 11am: 77 cookies
+// 12pm: 93 cookies
+// 1pm: 144 cookies
+// 2pm: 119 cookies
+// 3pm: 84 cookies
+// 4pm: 61 cookies
+// 5pm: 23 cookies
+// 6pm: 42 cookies
+// 7pm: 57 cookies
+// Total: 875 cookies
+
+{/* <ul id="Seattle">Seattle</ul> */ }
+
 
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 let dailyTotalCookieSales = 0;
 
-function getRandomInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+function randomCustomerPerHour() {
+  min = Math.ceil(minimumCustomerEachHour);
+  max = Math.floor(maximumCustomerEachHour);
+  return Math.floor(Math.random() * (maximumCustomerEachHour - minimumCustomerEachHour) + minimumCustomerEachHour);
 }
-// Math.random [inclusive] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// Math.random [inclusive] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random 
 
 let venue = {
   name: 'Seattle',
-  min: 23,
-  max: 65,
-  avgCookieSales: 6.3,
-  // random number math.random (between two vales)
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-  // function getRandomInt(min, max) {
-  //   min = Math.ceil(min);
-  //   max = Math.floor(max);
-  //   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  minimumCustomerEachHour: 23,
+  maximumCustomerEachHour: 65,
+  avgCookieSalesPerCustomer: 6.3,
+  cookiesSoldPerHourArray: [],
   // a method to calcucalte random number of customers per hour
   //  a method to calculate and populatenumber of cookies sold per hour array
   // a method to render the list items.
-};
+  randomCustomerPerHour()
+}
 
-console.log(venue, hours, getRandomInclusive);
+console.log(venue, hours, randomCustomerPerHour);
 
-
-// let locations = ['Seattle', 'Tokyo', 'Dubai', 'Paris', 'Lima']; ???????????????????????????????
-
-// let tokyo = {
-//   name: 'Tokyo',
-//   minCustomer: 3,
-//   maxCustomer: 24,
-//   avgCookieSales: 1.2,
-//   // random number math.random (between two vales)
-// };
-
-// let dubai = {
-//   name: 'Dubai',
-//   minCustomer: 11,
-//   maxCustomer: 38,
-//   avgCookieSales: 3.7,
-//   // random number math.random (between two vales)
-// };
-
-// let paris = {
-//   name: 'Paris',
-//   minCustomer: 20,
-//   maxCustomer: 38,
-//   avgCookieSales: 2.3,
-//   // random number math.random (between two vales)
-// };
-
-// let lima = {
-//   name: 'Lima',
-//   minCustomer: 2,
-//   maxCustomer: 16,
-//   avgCookieSales: 4.6,
-//   // random number math.random (between two vales)
-// };
