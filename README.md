@@ -6,8 +6,6 @@
 
 You have found yourself at the heart of **Pat's'** Cookie Stand, **welcome!** . . . 
 
-![patsSalmonLogo](https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png)
-
 ## Designer: [aloe-wish-iss]
 
 ![banner](https://github.com/AL0YSI0US/about-me/blob/main/img/bannerNameArt.JPG?raw=true)
@@ -29,7 +27,9 @@ You have found yourself at the heart of **Pat's'** Cookie Stand, **welcome!** . 
 ## > > > > > L I N K S & R E S O U R C E S < < < < <
 
 + [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
++ [Global Objects Math/Random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 + [Cookie Stand Tutorial](https://codefellows.github.io/code-201-guide/curriculum/class-02/project_setup)
++ [Rounded borders](https://www.w3schools.com/css/css3_borders.asp)
 + [Global_Objects/Math/random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 + [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 + [aCe ADA & WCAG Website Compliance Audit](https://ace.accessibe.com/)
