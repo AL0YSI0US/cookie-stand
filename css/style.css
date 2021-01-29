@@ -1,13 +1,25 @@
-  * {
+* {
   color: black;
   font-family: Arial, sans-serif;
   background-color: burlywood;
-}
-img {
+} 
+/* img {
   display: inline-block;
   border-radius: 25px;
   border: 3px solid #73AD21;
   padding: 5px;
   width: 120px;
   height: 45px;
+} */
+body {
+  background-color: burlywood;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  text-align: center;
 }
