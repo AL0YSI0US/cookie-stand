@@ -1,19 +1,35 @@
 * {
   color: black;
   font-family: 'Cuprum', sans-serif;
-  background-color: burlywood;
   font-size: larger;
 } 
-/* img {
+img {
   display: inline-block;
-  border-radius: 25px;
-  border: 3px solid #73AD21;
   padding: 5px;
-  width: 120px;
-  height: 45px;
-} */
+  width: 180px;
+  height: 60px;
+}
+table {
+  color: rgb(50, 105, 86);
+  background-color: rgb(156, 159, 231);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-align: ;
+  border: solid  rgb(0, 62, 78) 15px;
+  border-collapse: collapse;
+  /* margin-top: auto;
+  margin-right: auto; */
+  /* margin-left: auto; */
+  padding-top: 5px;
+}
+th, td {
+  border: solid rgb(0, 48, 41) 5px;
+  padding: 5px;
+}
+
 body {
-  background-color: burlywood;
+  background-color: rgb(187, 142, 82);
   text-align: center;
 }
 
