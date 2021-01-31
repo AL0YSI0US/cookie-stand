@@ -4,7 +4,7 @@
 
 **Hello there**, 
 
-You have found yourself at the heart of **Pat's'** Cookie Stand, **welcome!** . . . 
+You have found yourself at the heart of **Pat's'** Cookie Stand,  
 
 ## Designer: [aloe-wish-iss]
 
@@ -12,19 +12,20 @@ You have found yourself at the heart of **Pat's'** Cookie Stand, **welcome!** . 
 
 ## > > > > > C O L L A B O R A T I O N < < < < < 
 + **In Collaboration With Kassie Bradshaw** | Object literal / Method Theory | Populating Data to Sales Page
-+
-+
++ **In Collaboration With Kassie Bradshaw** | Constructor / Seperating Methods from prototypes
++ **In Collaboration with PJ** | Populating Daily Location Total's column
+
 ## > > > > > R E F L E C T I O N S < < < < <
 + My accountability buddies are very important to me, I learn so much from them as well as my fellow classmates. 
-+
-+
++ Finding a better method for planning out my wireframes is something that would be very helpful when I get to the stages of appending elements to the DOM
++ Starting with a Constructor function set up from the begining must be a game changer, It's also helpful to know what is happening deeper within the code. 
 
 ![access](https://github.com/AL0YSI0US/about-me/blob/main/img/8grid.png?raw=true) 
 ## Accessibility Data for Website: al0ysi0us.github.io/cookie-stand 
 + January xx, 2021 WCAG 2.1 AA Level Web Accessibility Audit | Verdict : UKN
 + January xx, 2021 WAVE Web Accessibility Evaluation | Verdict : UKN
 
-## > > > > > L I N K S & R E S O U R C E S < < < < <
+## > > > > > L I N K S  &  R E S O U R C E S < < < < <
 
 + [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
 + [Global Objects Math/Random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
