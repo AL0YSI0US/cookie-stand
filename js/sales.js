@@ -33,9 +33,9 @@ Store.prototype.calculateCookiesSoldPerHour = function () {
 // create a METHOD to render the list items to the sales.html page.
 Store.prototype.render = function () {
   this.calculateCookiesSoldPerHour();
-  let tableBody = document.getElementById('salmonCookiesSalesData');
+  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
   let tr = document.createElement('tr');
-  tableBody.appendChild(tr);
+  salmonSalesTable.appendChild(tr);
 
   let th = document.createElement('th');
   th.textContent = this.name;
@@ -57,6 +57,36 @@ Store.prototype.render = function () {
   // td.appendChild(tfoot);
 };
 
+let jerkRow = function () {
+  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
+  let thead = document.createElement('thead');
+  salmonSalesTable.appendChild(thead);
+
+  let tr =  document.createElement('tr');
+  thead.appendChild(tr);
+
+  let th = document.createElement('th');
+  th.textContent = '';
+  tr.appendChild(th);
+
+  for (let i = 0; i < hoursOfOperationArray.length; i++) {
+    let td = document.createElement('td');
+    td.textContent = hoursOfOperationArray[i];
+    tr.appendChild(td);
+  }
+  let td = document.createElement('td');
+  td.textContent = ('Daily Total Sales');
+  tr.appendChild(td);
+
+  let tfoot = document.createElement('tfoot');
+  tr.appendChild(tfoot);
+};
+
+
+// thead = header ROW of table
+// th = header OF the specific row
+
+
 // Store.prototype.calculateHourlyTotals = function () {
 //   let tfoot = document.getElementById
 
@@ -65,3 +95,5 @@ let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);
 let dubaiLocation = new Store('Dubai', 11, 38, 3.7);
 let parisLocation = new Store('Paris', 20, 38, 2.3);
 let limaLocation = new Store('Lima', 2, 16, 4.6);
+
+jerkRow();

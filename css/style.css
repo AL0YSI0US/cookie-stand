@@ -9,7 +9,11 @@ img {
   width: 180px;
   height: 60px;
 }
-table {
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table, td, thead {
   color: rgb(50, 105, 86);
   background-color: rgb(156, 159, 231);
   font-size: smaller;
@@ -17,23 +21,38 @@ table {
   font-weight: bold;
   text-align: center;
   border: solid  rgb(0, 62, 78) 15px;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  border-width: 8px;
   /* margin-top: auto;
   margin-right: auto; */
   /* margin-left: auto; */
   padding-top: 5px;
+  width: 80%;
 }
-th, td, tbody {
+th {
+  text-align: center;
+  border: solid  rgb(0, 62, 78) 15px;
+  border-width: 8px;
+}
+
+/* th, td, tbody, tfoot {
   border: solid rgb(0, 48, 41) 5px;
   padding: 5px;
-}
+} */
 
 body {
   background-color: rgb(187, 142, 82);
   text-align: center;
+  border: solid  rgb(0, 62, 78) 6px;
 }
 
 /* ul, li {
   text-align: center;
 } */
+
+/* SALES PAGE Information */
+
+infoLeft {
+  float: right;
+}
 
