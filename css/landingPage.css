@@ -2,6 +2,7 @@
   color: black;
   font-family: 'Cuprum', sans-serif;
   font-size: small;
+  font-size: 22px;
 } 
 img {
   display: inline-block;
@@ -62,3 +63,23 @@ body {
   text-align: center;
 } */
 
+/* SALES PAGE Information */
+
+#infoLeft {
+  align-content: space-around;
+  text-align: right;
+}
+
+#infoRight {
+  /* float: left; */
+  text-align: center;
+}
+header {
+  background-color: rgb(62, 105, 127);
+  height: 40px;
+  padding-top: 30px;
+}
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
