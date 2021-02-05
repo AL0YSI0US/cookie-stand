@@ -36,3 +36,4 @@ You have found yourself at the heart of **Pat's'** Cookie Stand,
 + [aCe ADA & WCAG Website Compliance Audit](https://ace.accessibe.com/)
 + [Chrome Screen Reader Plugin](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=ena)
 + [grid layout](https://grid.layoutit.com/)
++ [Baking Giphy](https://giphy.com/gifs/playmobil-christmas-xmas-merryxmas-3gILD66hEFl11Ff8zZ/embed)
