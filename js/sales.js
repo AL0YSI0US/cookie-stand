@@ -2,6 +2,7 @@
 
 let hoursOfOperationArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
+
 function Store(name, minimumCustomerPerHour, maximumCustomerPerHour, avgCookieSalesPerCustomer) {
   this.name = name;
   this.minimumCustomerPerHour = minimumCustomerPerHour;
@@ -51,10 +52,6 @@ Store.prototype.render = function () {
   let td = document.createElement('td');
   td.textContent = this.dailyTotalCookieSales;
   tr.appendChild(td);
-
-  // let tfoot = document.createElement('totalSalesData');
-  // tfoot.textContent = `${this.cookiesSoldPerHourArray[0]}`;
-  // td.appendChild(tfoot);
 };
 
 let jerkRow = function () {
@@ -62,7 +59,7 @@ let jerkRow = function () {
   let thead = document.createElement('thead');
   salmonSalesTable.appendChild(thead);
 
-  let tr =  document.createElement('tr');
+  let tr = document.createElement('tr');
   thead.appendChild(tr);
 
   let th = document.createElement('th');
@@ -77,18 +74,26 @@ let jerkRow = function () {
   let td = document.createElement('td');
   td.textContent = ('Daily Total Sales');
   tr.appendChild(td);
-
-  let tfoot = document.createElement('tfoot');
-  tr.appendChild(tfoot);
 };
 
+let bottomLine = function () {
+  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
+  let tr = document.createElement('tr');
+  salmonSalesTable.appendChild(tr);
 
-// thead = header ROW of table
-// th = header OF the specific row
+  let th = document.createElement('th');
+  th.textContent = ('Hourly Totals');
+  tr.appendChild(th);
 
-
-// Store.prototype.calculateHourlyTotals = function () {
-//   let tfoot = document.getElementById
+  for (let i=0; i < hoursOfOperationArray.length; i++) {
+    let td = document.createElement('td');
+    td.textContent = 'math';
+    tr.appendChild(td);
+  }
+  let td = document.createElement('td');
+  td.textContent = 'max math';
+  tr.appendChild(td);
+};
 
 let seattleLocation = new Store('Seattle', 23, 65, 6.3);
 let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);
@@ -97,3 +102,4 @@ let parisLocation = new Store('Paris', 20, 38, 2.3);
 let limaLocation = new Store('Lima', 2, 16, 4.6);
 
 jerkRow();
+bottomLine();
