@@ -1,13 +1,14 @@
 * {
-  /* color: rgb(6, 6, 6); */
+  color: black;
   font-family: 'Cuprum', sans-serif;
   font-size: small;
   font-size: 22px;
 } 
-
 img {
   display: inline-block;
   padding: 5px;
+  /* width: 180px;
+  height: 60px; */
 }
 
 h1 {
@@ -15,18 +16,13 @@ h1 {
   font-weight: bold;
   font-size: 42px;
 }
-
 nav {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
   font-size: 24px;
-  nav-left: auto;
-  float: left;
 }
-
 h2 {
   font-family: 'Cuprum', sans-serif;
-  float: right;
-}
+ }
 
 table, td, thead {
   color: rgb(0, 0, 0);
@@ -45,7 +41,6 @@ table, td, thead {
   padding-top: 5px;
   width: 80%;
 }
-
 th {
   text-align: center;
   border: solid  rgb(0, 62, 78) 15px;
@@ -64,9 +59,9 @@ body {
   font-size: 20px;
 }
 
-ul, li {
+/* ul, li {
   text-align: center;
-}
+} */
 
 /* SALES PAGE Information */
 
@@ -79,15 +74,12 @@ ul, li {
   /* float: left; */
   text-align: center;
 }
-
 header {
   background-color: rgb(62, 105, 127);
   height: 40px;
   padding-top: 30px;
 }
-
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  color:rgb(1, 13, 91)
 }
