@@ -103,9 +103,7 @@ let bottomLine = function () {
   td.textContent = 'max math';
   tr.appendChild(td);
 };
-
-let  = function 
-
+ 
 let seattleLocation = new Store('Seattle', 23, 65, 6.3);
 let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);
 let dubaiLocation = new Store('Dubai', 11, 38, 3.7);
