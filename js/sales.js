@@ -5,6 +5,8 @@
 let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
 let tableFooter = document.createElement('tfoot');
 
+let myForm = document.querySelector('newStoreForm');
+
 const allStores = [];
 let footerTotals = [];
 let grandTotal  = 0;
@@ -64,6 +66,12 @@ Store.prototype.render = function () {
   tr.appendChild(td);
 };
 
+let renderStores = function() {
+  for (let i = 0; i < allStores.length; i++) {
+    allStores[i].render();
+  }
+};
+
 let jerkRow = function () {
   let thead = document.createElement('thead');
   salmonSalesTable.appendChild(thead);
@@ -121,29 +129,29 @@ function calcFooterTotals() {
 
 
 
-// function handleSubmit(event){
-//   event.preventDefault();
+function handleSubmit(event){
+  event.preventDefault();
 
-//   let newLocation = event.target.newlocation.value;
-//   let newMinCust = +event.target.mincustomer.value;
-//   let newMaxCust = +event.target.maxcustomer.value;
-//   let newAvgCookie = +event.target.avgcookie.value;
+  let locationName = event.target.location.value;
+  let minCust = +event.target.mincust.value;
+  let maxCust = +event.target.maxcust.value;
+  let avgCookies = +event.target.avgcookies.value;
 
-//   let newStore = new CookieStore(newLocation, newMinCust, newMaxCust, newAvgCookie);
-//   newStore.render();
-//   tableFooter.removeChild(tableFooter.lastChild);
-//   bottomLine();
-// }
+  let newStore = new Store(locationName, minCust, maxCust, avgCookies);
+  newStore.render();
+  tableFooter.removeChild(tableFooter.lastChild);
+  bottomLine();
+}
 
 
- 
-let seattleLocation = new Store('Seattle', 23, 65, 6.3);
-let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);
-let dubaiLocation = new Store('Dubai', 11, 38, 3.7);
-let parisLocation = new Store('Paris', 20, 38, 2.3);
-let limaLocation = new Store('Lima', 2, 16, 4.6);
+new Store('Seattle', 23, 65, 6.3);
+new Store('Tokyo', 3, 24, 1.2);
+new Store('Dubai', 11, 38, 3.7);
+new Store('Paris', 20, 38, 2.3);
+new Store('Lima', 2, 16, 4.6);
 
 jerkRow();
+// renderStores();
 bottomLine();
 
-// myForm.addEventListener('submit', handleSubmit);
+myForm.addEventListener('submit', handleSubmit);
