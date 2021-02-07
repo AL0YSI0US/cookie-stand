@@ -1,5 +1,15 @@
 'use strict';
 
+// let tableHeader = document.getElementById('table-header');
+// let tableBody = document.getElementById('table-body');
+let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
+let tableFooter = document.createElement('tfoot');
+
+const allStores = [];
+let footerTotals = [];
+let grandTotal  = 0;
+
+
 let hoursOfOperationArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 
@@ -10,6 +20,7 @@ function Store(name, minimumCustomerPerHour, maximumCustomerPerHour, avgCookieSa
   this.avgCookieSalesPerCustomer = avgCookieSalesPerCustomer;
   this.cookiesSoldPerHourArray = [];
   this.dailyTotalCookieSales = 0;
+  allStores.push(this);
   this.render();
 }
 
@@ -34,7 +45,6 @@ Store.prototype.calculateCookiesSoldPerHour = function () {
 // create a METHOD to render the list items to the sales.html page.
 Store.prototype.render = function () {
   this.calculateCookiesSoldPerHour();
-  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
   let tr = document.createElement('tr');
   salmonSalesTable.appendChild(tr);
 
@@ -55,7 +65,6 @@ Store.prototype.render = function () {
 };
 
 let jerkRow = function () {
-  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
   let thead = document.createElement('thead');
   salmonSalesTable.appendChild(thead);
 
@@ -77,9 +86,9 @@ let jerkRow = function () {
 };
 
 let bottomLine = function () {
-  let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
   let tr = document.createElement('tr');
-  salmonSalesTable.appendChild(tr);
+  tableFooter.appendChild(tr);
+  salmonSalesTable.appendChild(tableFooter);
 
   let th = document.createElement('th');
   th.textContent = ('Hourly Totals');
@@ -94,6 +103,8 @@ let bottomLine = function () {
   td.textContent = 'max math';
   tr.appendChild(td);
 };
+
+let  = function 
 
 let seattleLocation = new Store('Seattle', 23, 65, 6.3);
 let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);

@@ -43,7 +43,8 @@ table, td, thead {
   padding: 5px;
   width: 80%;
 }
- 
+
+
 th, tfoot {
   text-align: center;
   border: solid  rgb(0, 62, 78) 12px;
