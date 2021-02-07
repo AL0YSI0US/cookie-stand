@@ -151,7 +151,7 @@ new Store('Paris', 20, 38, 2.3);
 new Store('Lima', 2, 16, 4.6);
 
 jerkRow();
-// renderStores();
+renderStores();
 bottomLine();
 
 myForm.addEventListener('submit', handleSubmit);
