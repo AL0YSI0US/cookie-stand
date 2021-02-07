@@ -86,6 +86,7 @@ let jerkRow = function () {
 };
 
 let bottomLine = function () {
+  calcFooterTotals();
   let tr = document.createElement('tr');
   tableFooter.appendChild(tr);
   salmonSalesTable.appendChild(tableFooter);
@@ -96,13 +97,45 @@ let bottomLine = function () {
 
   for (let i=0; i < hoursOfOperationArray.length; i++) {
     let td = document.createElement('td');
-    td.textContent = 'math';
+    td.textContent = footerTotals[i];
     tr.appendChild(td);
   }
   let td = document.createElement('td');
-  td.textContent = 'max math';
+  td.textContent = grandTotal;
   tr.appendChild(td);
 };
+
+function calcFooterTotals() {
+  footerTotals = [];
+  grandTotal = 0;
+  for ( let i = 0; i < hoursOfOperationArray.length; i++) {
+    let hourTotal = 0;
+    for (let j = 0; j < allStores.length; j++){
+      hourTotal += allStores[j].cookiesSoldPerHourArray[i];
+    }
+    footerTotals.push(hourTotal);
+    grandTotal += hourTotal;
+  }
+}
+
+
+
+
+// function handleSubmit(event){
+//   event.preventDefault();
+
+//   let newLocation = event.target.newlocation.value;
+//   let newMinCust = +event.target.mincustomer.value;
+//   let newMaxCust = +event.target.maxcustomer.value;
+//   let newAvgCookie = +event.target.avgcookie.value;
+
+//   let newStore = new CookieStore(newLocation, newMinCust, newMaxCust, newAvgCookie);
+//   newStore.render();
+//   tableFooter.removeChild(tableFooter.lastChild);
+//   bottomLine();
+// }
+
+
  
 let seattleLocation = new Store('Seattle', 23, 65, 6.3);
 let tokyoLocation = new Store('Tokyo', 3, 24, 1.2);
@@ -112,3 +145,5 @@ let limaLocation = new Store('Lima', 2, 16, 4.6);
 
 jerkRow();
 bottomLine();
+
+// myForm.addEventListener('submit', handleSubmit);
