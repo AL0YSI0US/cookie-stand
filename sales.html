@@ -18,7 +18,29 @@
   </header>
   
   <main>
+    <form id="form">
+      <fieldset>
+        <legend>New Store Submission Form</legend>
+    
+          <label for="locationName">New Store Location</label>
+          <input type="text" name="locationName" required="required">
+    
+          <label for="minCust">Minimum Customers Per Hour</label>
+          <input type="number" min="0" name="minCust" required="required">
+    
+          <label for="maxCust">Maximum Customers Per Hour</label>
+          <input type="number" min="0" name="maxCust" required="required">
+    
+          <label for="avgcookies">Average # of Cookies Per customer</label>
+          <input type="number" min="0" name="avgcookies" required="required">
+    
+    
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+   
     <table id="salmonCookiesSalesData"></table>
+
     <iframe src="https://giphy.com/embed/3gILD66hEFl11Ff8zZ" width="180" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/playmobil-christmas-xmas-merryxmas-3gILD66hEFl11Ff8zZ"></a></p>
   </main>
  
