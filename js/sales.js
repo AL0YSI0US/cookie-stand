@@ -1,15 +1,13 @@
 'use strict';
 
-// let tableHeader = document.getElementById('table-header');
-// let tableBody = document.getElementById('table-body');
 let salmonSalesTable = document.getElementById('salmonCookiesSalesData');
-let tableFooter = document.createElement('tfoot');
+let tfoot = document.createElement('tfoot');
 
-let myForm = document.querySelector('newStoreForm');
+let myForm = document.querySelector('form');
 
 const allStores = [];
 let footerTotals = [];
-let grandTotal  = 0;
+let grandTotal = 0;
 
 
 let hoursOfOperationArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
@@ -23,14 +21,13 @@ function Store(name, minimumCustomerPerHour, maximumCustomerPerHour, avgCookieSa
   this.cookiesSoldPerHourArray = [];
   this.dailyTotalCookieSales = 0;
   allStores.push(this);
-  this.render();
+  // this.render();
 }
 
 
 
 Store.prototype.generateRandomCustomerPerHour = function () {
   return Math.floor(Math.random() * (this.maximumCustomerPerHour - this.minimumCustomerPerHour + 1) + this.minimumCustomerPerHour);
-  // Math.random [inclusive] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 };
 
 Store.prototype.calculateCookiesSoldPerHour = function () {
@@ -41,15 +38,16 @@ Store.prototype.calculateCookiesSoldPerHour = function () {
     this.cookiesSoldPerHourArray.push(cookiesSoldCurrentHour);
     this.dailyTotalCookieSales += cookiesSoldCurrentHour;
   }
-  console.log(this.dailyTotalCookieSales);
+  // console.log(this.dailyTotalCookieSales);
 };
 
 // create a METHOD to render the list items to the sales.html page.
 Store.prototype.render = function () {
   this.calculateCookiesSoldPerHour();
+  let tbody = document.createElement('tbody');
+  salmonSalesTable.appendChild(tbody);
   let tr = document.createElement('tr');
-  salmonSalesTable.appendChild(tr);
-
+  tbody.appendChild(tr);
   let th = document.createElement('th');
   th.textContent = this.name;
   tr.appendChild(th);
@@ -60,13 +58,13 @@ Store.prototype.render = function () {
     tr.appendChild(td);
   }
   // Create a method to populate 'Daily Location Total' column
-  console.log(this.dailyTotalCookieSales);
+  // console.log(this.dailyTotalCookieSales);
   let td = document.createElement('td');
   td.textContent = this.dailyTotalCookieSales;
   tr.appendChild(td);
 };
 
-let renderStores = function() {
+let renderStores = function () {
   for (let i = 0; i < allStores.length; i++) {
     allStores[i].render();
   }
@@ -84,26 +82,29 @@ let jerkRow = function () {
   tr.appendChild(th);
 
   for (let i = 0; i < hoursOfOperationArray.length; i++) {
-    let td = document.createElement('td');
-    td.textContent = hoursOfOperationArray[i];
-    tr.appendChild(td);
+    let th = document.createElement('th');
+    th.textContent = hoursOfOperationArray[i];
+    tr.appendChild(th);
   }
-  let td = document.createElement('td');
-  td.textContent = ('Daily Total Sales');
-  tr.appendChild(td);
+  th = document.createElement('th');
+  th.textContent = ('Daily Total Sales');
+  tr.appendChild(th);
 };
+
 
 let bottomLine = function () {
   calcFooterTotals();
+
+  salmonSalesTable.appendChild(tfoot);
+
   let tr = document.createElement('tr');
-  tableFooter.appendChild(tr);
-  salmonSalesTable.appendChild(tableFooter);
+  tfoot.appendChild(tr);
 
   let th = document.createElement('th');
   th.textContent = ('Hourly Totals');
   tr.appendChild(th);
 
-  for (let i=0; i < hoursOfOperationArray.length; i++) {
+  for (let i = 0; i < hoursOfOperationArray.length; i++) {
     let td = document.createElement('td');
     td.textContent = footerTotals[i];
     tr.appendChild(td);
@@ -116,9 +117,9 @@ let bottomLine = function () {
 function calcFooterTotals() {
   footerTotals = [];
   grandTotal = 0;
-  for ( let i = 0; i < hoursOfOperationArray.length; i++) {
+  for (let i = 0; i < hoursOfOperationArray.length; i++) {
     let hourTotal = 0;
-    for (let j = 0; j < allStores.length; j++){
+    for (let j = 0; j < allStores.length; j++) {
       hourTotal += allStores[j].cookiesSoldPerHourArray[i];
     }
     footerTotals.push(hourTotal);
@@ -129,7 +130,7 @@ function calcFooterTotals() {
 
 
 
-function handleSubmit(event){
+function handleSubmit(event) {
   event.preventDefault();
 
   let locationName = event.target.location.value;
@@ -139,7 +140,7 @@ function handleSubmit(event){
 
   let newStore = new Store(locationName, minCust, maxCust, avgCookies);
   newStore.render();
-  tableFooter.removeChild(tableFooter.lastChild);
+  document.getElementById('salmonCookiesSalesData').deleteRow(-1);
   bottomLine();
 }
 
