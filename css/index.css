@@ -3,13 +3,26 @@
   font-family: 'Cuprum', sans-serif;
   font-size: small;
   font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 } 
- 
+
+/* article>p {
+  /* border:solid  rgb(168, 76, 10) 5px; 
+  border-radius: 10px;
+} */
+/* link {
+  padding
+} */
+
 img {
-  display: inline-block;
-  padding: 5px;
+  border-radius: 30px;
 }
- 
+li {
+  /* border:solid  rgb(2, 101, 19) 5px; */
+  border-radius: 10px;
+}
+
 h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 
   sans-serif;
@@ -17,6 +30,10 @@ h1 {
   font-size: 42px;
   color:rgb(6, 6, 6);
 }
+
+/* p {
+ epmty
+} */
  
 nav {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
@@ -24,13 +41,20 @@ nav {
   nav-left: auto;
   float: left;
   color: rgb(14, 3, 3);
+  padding-top: 30px;
+  padding-left: 50px;
 }
  
-h2 {
+/* h2 {
   font-family: 'Cuprum', sans-serif;
   float: right;
+} */
+
+h3 {
+  font-size: 30px;
+  text-align: center;
 }
- 
+
 table, td, thead {
   color: rgb(0, 0, 0);
   background-color: rgb(156, 159, 231);
@@ -73,16 +97,6 @@ ul, li {
  
 /* SALES PAGE Information */
  
-#infoLeft {
-  align-content: space-around;
-  text-align: right;
-}
- 
-#infoRight {
-  /* float: left; */
-  text-align: left;
-}
- 
 header {
   background-color: rgb(62, 105, 127);
   height: 40px;
@@ -90,7 +104,10 @@ header {
 }
  
 footer {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   color:rgb(1, 13, 91)
 }
+
