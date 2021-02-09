@@ -1,13 +1,10 @@
 * {
-  /* color: black; */
   font-family: 'Cuprum', sans-serif;
   font-size: small;
 } 
 img {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 5px;
-  /* width: 180px;
-  height: 60px; */
 }
  
 h1 {
@@ -25,9 +22,13 @@ nav {
   color: rgb(42, 42, 128);
   padding-bottom: 20px;
 }
- 
- 
-table, td, thead {
+
+ tr:first-child th {
+  padding-left: 3px;
+  padding-right: 3px;
+ }
+
+table, td {
   color: rgb(15, 6, 6);
   background-color: rgb(156, 159, 231);
   font-size: medium;
@@ -43,14 +44,18 @@ table, td, thead {
   padding: 5px;
   width: 80%;
 }
-
+td:hover {
+ color: rgb(166, 228, 248);
+}
+th:hover {
+  color: rgb(237, 75, 102);
+}
 
 th, tfoot {
   text-align: center;
   border: solid  rgb(0, 62, 78) 12px;
   border-width: 5px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-   /* font-weight: bold; */
 }
  
 body {
@@ -58,4 +63,9 @@ body {
   text-align: center;
   border: solid  rgb(0, 62, 78) 6px;
   font-size: 20px;
+}
+
+footer {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
 }

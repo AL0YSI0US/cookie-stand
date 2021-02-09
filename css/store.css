@@ -34,13 +34,7 @@ ul, li {
   text-align: center;
   padding-bottom: 20px;
 }
- 
 footer {
-  /* padding-top: 60px;  */
-  font-family: 'Cuprum', sans-serif;
-  font-weight: bold;
-}
- 
-main {
-  padding-bottom: 60px;
+font-family: 'Dosis', sans-serif;
+text-align: center;
 }
