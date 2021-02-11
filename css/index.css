@@ -8,6 +8,7 @@ h1 {
 }
 img {
   border-radius: 10px;
+  border:solid rgb(0, 62, 78) 5px;
 }
 nav {
   font-family: 'IBM Plex Mono', monospace;  
@@ -16,7 +17,7 @@ nav {
   float: left;
   color: rgb(14, 3, 3);
   margin-top: 30px;
-  padding-left: 50px;
+  padding-left: 100px;
 }
 
 #feature-section {
@@ -32,32 +33,82 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/*                                 SERIF FONT LIVES BELOW  */
 
-/* SERIF FONT LIVES BELOW !!!!! */
 body {
   background-color: rgb(187, 142, 82);
   text-align: center;
-  border: solid  rgb(0, 62, 78) 6px;
+  border: solid  rgb(0, 62, 78) 60px;
   font-size: 20px;
   font-weight: bold;
   color: rgb(22, 47, 40);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* ^^^^^ SERIF FONT LIVES IN HERE!!!!! ^^^^^^^^^^^^^^^^^^ */
 
- ul, li {
+/* ^^^^^^^^^^^ SERIF FONT LIVES IN HERE ^^^^^^^^^^^^^^^^^^ */
+
+ul, li {
   padding-top: 5px;
   text-align: center;
   color: rgba(22, 22, 22, 0.85);
   font-size: 20px;
+  padding-bottom: 5px;
 }
-p{ 
-  text-align: cen;
-}
+
 footer {
   padding-top: 10px;
 }
 
+/* FOR MOVING WHOLE SECTIONS */
+
+#seattle {
+  border: solid  rgb(0, 62, 78) 10px;
+  border-radius: 10px;
+  width: 450px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+#tokyo {
+  border: dashed  rgb(0, 62, 78) 10px;
+  border-radius: 180px;
+  width: 450px;
+  margin-left: 355px;
+  margin-bottom: 20px;
+
+}
+#paris {
+  border: solid rgb(0, 62, 78) 10px;
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+#lima {
+  border: solid rgb(0, 62, 78) 10px;
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 355px;
+  margin-bottom: 20px;
+}
+#dubai {
+  border: solid rgb(0, 62, 78) 10px;
+  width: 450px;
+  border-radius: 10px;
+  margin-left: 80px;
+}
+#cookie-wear {
+  border: solid  rgb(0, 115, 144) 10px;
+  width: fit-content;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 180px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+/* FOR THE SCROLLING TEXT */
 .salmonCookieScroll {
   height: 50px;  
   overflow: hidden;
