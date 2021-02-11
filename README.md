@@ -1,6 +1,6 @@
 # LAB - 06
 
-## Cookie-Stand ![cs](https://img.shields.io/github/license/AL0YSI0US/cookie-stand)
+## Cookie-Stand ![cs](https://img.shields.io/github/license/AL0YSI0US/cookie-stand) ![open-pr](https://img.shields.io/github/issues-pr-raw/AL0YSI0US/cookie-stand) ![closed-pr](https://img.shields.io/github/issues-pr-closed/AL0YSI0US/cookie-stand)
 
 **Hello there**,
 
