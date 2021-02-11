@@ -28,6 +28,7 @@ nav {
 iframe {
   border: solid rgb(0, 62, 78) 6px;
   border-radius: 10px;
+  padding-bottom: 20px;
 }
  
 ul, li {
@@ -37,5 +38,4 @@ ul, li {
 footer {
 font-family: 'Dosis', sans-serif;
 text-align: center;
-padding-top: 20px;
 }
