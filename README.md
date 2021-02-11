@@ -6,17 +6,29 @@
 
 Welcome to **Pat's' Cookie Stand**!
 
-Here you can find Pat's' digital storefront for his various cookies store locations. There are three pages to check out:
+Here you can find Pat's' digital storefront for his various cookies store locations. 
+
+There are three pages to check out:
 
 1. Home page **Pat's Salmon Cookies'**
 2. **Salmon Cookie Storefront** [Coming Soon Disclaimer]
 3. **Salmon Cookie Sales Data** [Sales data by the hour]
 
-On Pats homepage you can take a peek at store information broken down by each branch. At the bottom of the page you can see what our new shirtslook like [*they're available in store should you feel inclned to pick yourself up one today*]
+**On Pat's homepage** you can take a peek at store information broken down by each branch. 
 
-At the Sales data page if you refresh the page you will see the numbers chage...this is because pat's calculating the average sales by the hour and including a randomly generated number of customers in his math.
+At the bottom of the page you can see what our new shirts look like. 
 
-To top it all of **YOU** can add your very own store location to the table, just answer the prompts and press submit!
+> [*they're available in store should you feel inclned to pick yourself up one today*]
+
+At the Sales data page, if you refresh the page, you will see the tables data change...
+
+this is because Pat's calculating the average sales by the hour and including a randomly 
+
+generated number of customers in his math.
+
+To top it all of **YOU** can add your very own store location to the table, 
+
+just answer the prompts and press submit!
 
 ## Designer: [aloe-wish-iss]
 
@@ -27,10 +39,11 @@ To top it all of **YOU** can add your very own store location to the table, just
 + **In Collaboration With Kassie Bradshaw** | Object literal / Method Theory | Populating Data to Sales Page
 + **In Collaboration With Kassie Bradshaw** | Constructor / Seperating Methods from prototypes
 + **In Collaboration with PJ** | Populating a Daily initial Total's column
++ **Special Thanks to >>> Kassie Bradshaw** | Table Theory...and for being a rockin' accountability partner!
 
 ## > R E F L E C T I O N S <
 
-+ My accountability buddies are very important to me, I learn so much from them as well as my fellow classmates.
++ My accountability buddies are very important to me, I learn so much from them as well as my other fellow classmates.
 + Finding a better method for planning out my wireframes is something that would be very helpful when I get to the stages of appending elements to the DOM
 + Starting with a Constructor function set up from the begining must be a game changer, It's also helpful to know what is happening deeper within the code I am begining to appreciate the nuances of JavaScript.
 + I spent a lot of time learning the structure of a table trying to figiure out how to get one to manifest itself.
@@ -55,4 +68,5 @@ To top it all of **YOU** can add your very own store location to the table, just
 + [Delete Row Method-Table Data Modification](https://www.w3schools.com/jsref/met_table_deleterow.asp)
 + [Dosis - Google Font](https://fonts.google.com/specimen/Dosis?preview.text=%C2%A92021%20codefellows%20%3C(%5E.%5E)%3E%20ALOYSIOUS&preview.text_type=custom&sidebar.open=true&selection.family=Dosis:wght@600) Pat's website `<footer>`
 + [Cuprum - Google Font](https://fonts.google.com/specimen/Cuprum?category=Sans+Serif,Display,Handwriting,Monospace&sidebar.open=true&selection.family=Cuprum)  Feature `<section>`
++ [IBM Plex Mono - Google Font](https://fonts.google.com/specimen/IBM+Plex+Mono?preview.text_type=custom) `<scrolling text>` *located above the footer element on Pat's home page*
 + [Scrolling Text](https://colibriwp.com/blog/scrolling-text/) *colibri blog*
