@@ -1,113 +1,105 @@
-* {
-  /* color: rgb(6, 6, 6); */
-  font-family: 'Cuprum', sans-serif;
-  font-size: small;
-  font-size: 22px;
+h1 {
   padding-top: 10px;
   padding-bottom: 10px;
-} 
-
-/* article>p {
-  /* border:solid  rgb(168, 76, 10) 5px; 
-  border-radius: 10px;
-} */
-/* link {
-  padding
-} */
-
-img {
-  border-radius: 30px;
-}
-li {
-  /* border:solid  rgb(2, 101, 19) 5px; */
-  border-radius: 10px;
-}
-
-h1 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 
-  sans-serif;
+  font-family: 'Cuprum', sans-serif;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 46px;
   color:rgb(6, 6, 6);
 }
-
-/* p {
- epmty
-} */
- 
+img {
+  border-radius: 10px;
+}
 nav {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-family: 'IBM Plex Mono', monospace;  
   font-size: 24px;
   nav-left: auto;
   float: left;
   color: rgb(14, 3, 3);
-  padding-top: 30px;
+  margin-top: 30px;
   padding-left: 50px;
 }
- 
-/* h2 {
+
+#feature-section {
   font-family: 'Cuprum', sans-serif;
-  float: right;
-} */
+  font-size: 26px;
+  padding-bottom: 20px;
+}
 
 h3 {
-  font-size: 30px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 34px;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-table, td, thead {
-  color: rgb(0, 0, 0);
-  background-color: rgb(156, 159, 231);
-  font-size: medium;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  border: solid  rgb(0, 62, 78) 3px;
-  border-collapse: collapse;
-  border-width: 5px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 100px; 
-  /* margin-left: auto; */
-  padding-top: 5px;
-  width: 80%;
-}
- 
-th {
-  text-align: center;
-  border: solid  rgb(0, 62, 78) 15px;
-  border-width: 5px;
-}
- 
-/* th, td, tbody, tfoot {
-  border: solid rgb(0, 48, 41) 5px;
-  padding: 5px;
-} */
- 
+/* SERIF FONT LIVES BELOW !!!!! */
 body {
   background-color: rgb(187, 142, 82);
   text-align: center;
   border: solid  rgb(0, 62, 78) 6px;
   font-size: 20px;
+  font-weight: bold;
+  color: rgb(22, 47, 40);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
- 
-ul, li {
+/* ^^^^^ SERIF FONT LIVES IN HERE!!!!! ^^^^^^^^^^^^^^^^^^ */
+
+ ul, li {
+  padding-top: 5px;
   text-align: center;
+  color: rgba(22, 22, 22, 0.85);
+  font-size: 20px;
 }
- 
-/* SALES PAGE Information */
- 
-header {
-  background-color: rgb(62, 105, 127);
-  height: 40px;
-  padding-top: 30px;
+p{ 
+  text-align: cen;
 }
- 
 footer {
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color:rgb(1, 13, 91)
+  padding-top: 10px;
 }
 
+.salmonCookieScroll {
+  height: 50px;  
+  overflow: hidden;
+  position: relative;
+ }
+ .salmonCookieScroll h3 {
+  font-size: 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgb(0, 68, 38);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);  
+  transform:translateX(100%);
+  /* Apply animation to this element */  
+  -moz-animation: salmonCookieScroll 15s linear infinite;
+  -webkit-animation: salmonCookieScroll 15s linear infinite;
+  animation: salmonCookieScroll 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes salmonCookieScroll {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes salmonCookieScroll {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes salmonCookieScroll {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%);     
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }

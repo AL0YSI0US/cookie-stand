@@ -38,7 +38,7 @@ table, td {
   border: solid  rgb(0, 62, 78) 3px;
   border-collapse: collapse;
   border-width: 5px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 100px; 
   padding: 5px;
@@ -68,4 +68,25 @@ body {
 footer {
   font-family: 'Dosis', sans-serif;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+form fieldset {
+  border: solid  rgb(0, 62, 78) 5px;
+  width: 75%;
+  height: 75px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 110px;
+  background-color: darkcyan;
+  font-weight: bold;
+  font-size: medium;
+}
+button {
+  color: rgb(248, 33, 18);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
