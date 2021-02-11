@@ -55,5 +55,4 @@ To top it all of **YOU** can add your very own store location to the table, just
 + [Delete Row Method-Table Data Modification](https://www.w3schools.com/jsref/met_table_deleterow.asp)
 + [Dosis - Google Font](https://fonts.google.com/specimen/Dosis?preview.text=%C2%A92021%20codefellows%20%3C(%5E.%5E)%3E%20ALOYSIOUS&preview.text_type=custom&sidebar.open=true&selection.family=Dosis:wght@600) Pat's website `<footer>`
 + [Cuprum - Google Font](https://fonts.google.com/specimen/Cuprum?category=Sans+Serif,Display,Handwriting,Monospace&sidebar.open=true&selection.family=Cuprum)  Feature `<section>`
-+
 + [Scrolling Text](https://colibriwp.com/blog/scrolling-text/) *colibri blog*
