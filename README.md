@@ -34,14 +34,14 @@ just answer the prompts and press submit!
 
 ![banner](https://github.com/AL0YSI0US/about-me/blob/main/img/bannerNameArt.JPG?raw=true)
 
-## > C O L L A B O R A T I O N <
+## C O L L A B O R A T I O N 
 
 + **In Collaboration With Kassie Bradshaw** | Object literal / Method Theory | Populating Data to Sales Page
 + **In Collaboration With Kassie Bradshaw** | Constructor / Seperating Methods from prototypes
 + **In Collaboration with PJ** | Populating a Daily initial Total's column
 + **Special Thanks to >>> Kassie Bradshaw** | Table Theory...and for being a rockin' accountability partner!
 
-## > R E F L E C T I O N S <
+## R E F L E C T I O N S 
 
 + My accountability buddies are very important to me, I learn so much from them as well as my other fellow classmates.
 + Finding a better method for planning out my wireframes is something that would be very helpful when I get to the stages of appending elements to the DOM
@@ -56,7 +56,7 @@ just answer the prompts and press submit!
 + February 8, 2021 WCAG 2.1 AA Level Web Accessibility Audit | Verdict : **Semi-compliant**
 + February 8, 2021 WAVE Web Accessibility Evaluation | Verdict : **Compliant**
 
-## > L I N K S  &  R E S O U R C E S <
+## L I N K S  &  R E S O U R C E S 
 
 + [Cookie Stand Tutorial](https://codefellows.github.io/code-201-guide/curriculum/class-02/project_setup) *class guide*
 + [CSS reset](https://meyerweb.com/eric/tools/css/reset/) *Meyers Reset*
