@@ -70,3 +70,10 @@ just answer the prompts and press submit!
 + [Cuprum - Google Font](https://fonts.google.com/specimen/Cuprum?category=Sans+Serif,Display,Handwriting,Monospace&sidebar.open=true&selection.family=Cuprum)  Feature `<section>`
 + [IBM Plex Mono - Google Font](https://fonts.google.com/specimen/IBM+Plex+Mono?preview.text_type=custom) `<scrolling text>` *located above the footer element on Pat's home page*
 + [Scrolling Text](https://colibriwp.com/blog/scrolling-text/) *colibri blog*
+
+
+<!--
+
+![Profile views](https://gpvc.arturio.dev/AL0YSI0US)
+
+-->
